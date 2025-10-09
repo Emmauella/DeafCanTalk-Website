@@ -3,8 +3,8 @@ from nicegui import ui
 
 def create_footer():
     """Create a consistent footer for all pages."""
-    with ui.footer().classes('bg-[#001f3f] text-white').style('padding: 2rem;'):
-        with ui.column().classes('w-full gap-6'):
+    with ui.footer().classes('bg-[#001f3f] text-white').style('padding: 1rem;'):
+        with ui.column().classes('w-full h-[50%] gap-6'):
             # Main footer content
             with ui.row().classes('w-full justify-around items-start flex-wrap gap-8'):
                 # About section

@@ -2,12 +2,12 @@ from nicegui import ui
 
 def create_navbar():
     """Create a consistent navbar for all pages."""
-    with ui.header().classes('bg-[#003366] text-white shadow-lg').style('padding: 1rem 2rem;'):
+    with ui.header().classes('bg-[#61A5C2] text-white shadow-lg').style('padding: 1rem 2rem;'):
         with ui.row().classes('w-full items-center justify-between'):
             # Logo and brand
             with ui.link(target='/').classes('no-underline'):
                 with ui.row().classes('items-center gap-3'):
-                    ui.label('DeafCanTalk').classes('text-2xl font-bold text-[#FFD700]')
+                    ui.label('DeafCanTalk').classes('text-2xl font-bold text-blue-100')
             
             # Navigation links
             with ui.row().classes('gap-6 items-center'):

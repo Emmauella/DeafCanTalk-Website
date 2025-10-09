@@ -3,16 +3,17 @@ from components.nav import create_navbar
 from components.footer import create_footer
 
 
+
 @ui.page('/')
 def home_page():
     create_navbar()
     # Hero section
-    with ui.element('div').classes('hero-section'):
-        ui.label('Because Everyone Deserves to Be Heard').classes('text-5xl font-bold mb-4')
-        ui.label('Empowering the deaf and hard-of-hearing community through technology and education').classes('text-xl mb-8 text-gray-200')
-        with ui.row().classes('gap-4 justify-center'):
-            ui.button('Learn More', on_click=lambda: ui.navigate.to('/about')).classes('btn-primary')
-            ui.button('Get Involved', on_click=lambda: ui.navigate.to('/contact')).classes('btn-secondary')
+    with ui.element('div').style('background-image: url(/assets/cvs.jpg); background-size: cover; background-position: center; width: 100%; min-height: 100vh; inset: 0; z-index: -2 ').classes("flex flex-col justify-center items center relative"):
+        ui.label('').classes('text-5xl font-bold mb-4')
+        ui.label('').classes('text-xl mb-8 text-gray-200')
+        with ui.row().style("margin-top:20px").classes('gap-4 justify-center margins-top: 20px'):
+            # ui.button('', on_click=lambda: ui.navigate.to('/about')).classes('btn-primary')
+            ui.button('Get Involved', on_click=lambda: ui.navigate.to('/contact')).classes(' btn- bottom btn-secondary')
     
     # Introduction section
     with ui.element('div').classes('section bg-gray-50'):
@@ -22,7 +23,7 @@ def home_page():
                 ui.label('DeafCanTalk is a revolutionary mobile app dedicated to bridging communication gaps and empowering the deaf and hard-of-hearing community. Our mission is to create a world where everyone can communicate freely and be understood.').classes('text-lg text-gray-700 leading-relaxed')
                 ui.label('Through innovative technology, educational resources, and community support, we are breaking down barriers and fostering inclusiveness.').classes('text-lg text-gray-700 leading-relaxed')
             with ui.column().classes('flex-1'):
-                ui.image('/assets/W5AZxosMC3ns.jpg').classes('rounded-lg shadow-lg w-full').style('max-width: 500px;')
+                ui.image('/assets/deafcann.jpeg').classes('rounded-lg shadow-lg w-full').style('max-width: 500px;')
     
     # App download section
     with ui.element('div').classes('section'):
@@ -52,6 +53,6 @@ def home_page():
                 ui.label('Real-Time Communication').classes('text-2xl font-semibold text-[#0066cc] mb-3')
                 ui.label('Utilize cutting-edge technology for real-time sign language translation and text-to-speech capabilities.').classes('text-gray-700')
     
-    create_footer()
+    # create_footer()
 
 
