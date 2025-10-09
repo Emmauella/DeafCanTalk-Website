@@ -34,17 +34,17 @@ def about_page():
         with ui.row().classes('w-full gap-6 flex-wrap justify-center'):
             # Vision 1
             with ui.element('div').classes('card').style('flex: 1; min-width: 280px; max-width: 350px;'):
-                ui.label('🌍 Global Accessibility').classes('text-2xl font-semibold text-[#0066cc] mb-3')
+                ui.label(' Global Accessibility').classes('text-2xl font-semibold text-[#0066cc] mb-3')
                 ui.label('We envision a world where sign language is universally recognized and accessible technology empowers every deaf individual to communicate effortlessly.').classes('text-gray-700')
             
             # Vision 2
             with ui.element('div').classes('card').style('flex: 1; min-width: 280px; max-width: 350px;'):
-                ui.label('🎓 Education for All').classes('text-2xl font-semibold text-[#0066cc] mb-3')
+                ui.label('Education for All').classes('text-2xl font-semibold text-[#0066cc] mb-3')
                 ui.label('We aim to provide comprehensive educational resources that enable both deaf individuals and hearing people to learn and understand sign language.').classes('text-gray-700')
             
             # Vision 3
             with ui.element('div').classes('card').style('flex: 1; min-width: 280px; max-width: 350px;'):
-                ui.label('💡 Innovation & Advocacy').classes('text-2xl font-semibold text-[#0066cc] mb-3')
+                ui.label('Innovation & Advocacy').classes('text-2xl font-semibold text-[#0066cc] mb-3')
                 ui.label('We are committed to continuous innovation and advocacy, pushing for policies and technologies that promote inclusiveness and equality.').classes('text-gray-700')
     
     # Team section

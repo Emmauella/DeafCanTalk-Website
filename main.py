@@ -1,10 +1,10 @@
 from nicegui import ui, app
-from components.nav import create_navbar
-from components.footer import create_footer
 from  pages.about import about_page
 from pages.blog import blog_page
 from pages.contact import contact_page
 from pages.education import education_page
+from pages.home import home_page
+from pages.gallery import gallery_page
 
 
 

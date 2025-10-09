@@ -51,19 +51,19 @@ def contact_page():
                 
                 # Email
                 with ui.element('div').classes('card'):
-                    ui.label('📧 Email').classes('text-xl font-semibold text-[#0066cc] mb-2')
+                    ui.label('Email').classes('text-xl font-semibold text-[#0066cc] mb-2')
                     ui.label('support@deafcantalk.org').classes('text-gray-700')
                     ui.label('info@deafcantalk.org').classes('text-gray-700')
                 
                 # Phone
                 with ui.element('div').classes('card'):
-                    ui.label('📞 Phone').classes('text-xl font-semibold text-[#0066cc] mb-2')
+                    ui.label(' Phone').classes('text-xl font-semibold text-[#0066cc] mb-2')
                     ui.label('+1 (555) 123-4567').classes('text-gray-700')
                     ui.label('Monday - Friday: 9am - 5pm EST').classes('text-sm text-gray-600')
                 
                 # Address
                 with ui.element('div').classes('card'):
-                    ui.label('📍 Address').classes('text-xl font-semibold text-[#0066cc] mb-2')
+                    ui.label('Address').classes('text-xl font-semibold text-[#0066cc] mb-2')
                     ui.label('123 Accessibility Lane').classes('text-gray-700')
                     ui.label('Suite 456').classes('text-gray-700')
                     ui.label('San Francisco, CA 94102').classes('text-gray-700')
@@ -76,25 +76,25 @@ def contact_page():
         with ui.row().classes('gap-6 justify-center flex-wrap'):
             # Facebook
             with ui.element('div').classes('card').style('flex: 0 1 200px; text-align: center;'):
-                ui.label('📘').classes('text-5xl mb-3')
+                ui.label('Writeup goes here').classes('text-5xl mb-3')
                 ui.label('Facebook').classes('text-xl font-semibold text-[#0066cc] mb-2')
                 ui.link('Follow Us', 'https://facebook.com', new_tab=True).classes('text-gray-700 hover:text-[#0066cc]')
             
             # Twitter
             with ui.element('div').classes('card').style('flex: 0 1 200px; text-align: center;'):
-                ui.label('🐦').classes('text-5xl mb-3')
+                ui.label('Writeup goes here').classes('text-5xl mb-3')
                 ui.label('Twitter').classes('text-xl font-semibold text-[#0066cc] mb-2')
                 ui.link('Follow Us', 'https://twitter.com', new_tab=True).classes('text-gray-700 hover:text-[#0066cc]')
             
             # Instagram
             with ui.element('div').classes('card').style('flex: 0 1 200px; text-align: center;'):
-                ui.label('📷').classes('text-5xl mb-3')
+                ui.label('Writeup').classes('text-5xl mb-3')
                 ui.label('Instagram').classes('text-xl font-semibold text-[#0066cc] mb-2')
                 ui.link('Follow Us', 'https://instagram.com', new_tab=True).classes('text-gray-700 hover:text-[#0066cc]')
             
             # LinkedIn
             with ui.element('div').classes('card').style('flex: 0 1 200px; text-align: center;'):
-                ui.label('💼').classes('text-5xl mb-3')
+                ui.label('writeup').classes('text-5xl mb-3')
                 ui.label('LinkedIn').classes('text-xl font-semibold text-[#0066cc] mb-2')
                 ui.link('Follow Us', 'https://linkedin.com', new_tab=True).classes('text-gray-700 hover:text-[#0066cc]')
     
@@ -102,7 +102,7 @@ def contact_page():
     with ui.element('div').classes('section bg-gray-50'):
         ui.label('Visit Our Office').classes('text-3xl font-bold text-[#003366] mb-6 text-center')
         with ui.element('div').classes('w-full').style('height: 400px; background: linear-gradient(135deg, #e0e0e0 0%, #f5f5f5 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center;'):
-            ui.label('🗺️ Map Location').classes('text-4xl text-gray-500')
+            ui.label('Map Location').classes('text-4xl text-gray-500')
         ui.label('Interactive map showing our office location would be displayed here.').classes('text-sm text-gray-600 text-center mt-4')
     
     # FAQ section

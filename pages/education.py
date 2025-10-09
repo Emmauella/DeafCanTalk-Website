@@ -62,7 +62,7 @@ def education_page():
             
             # Resource 3
             with ui.element('div').classes('card').style('flex: 1; min-width: 250px;'):
-                ui.label('📄 Communication Etiquette Guide').classes('text-xl font-semibold text-[#0066cc] mb-2')
+                ui.label('Communication Etiquette Guide').classes('text-xl font-semibold text-[#0066cc] mb-2')
                 ui.label('Learn best practices for communicating respectfully with deaf and hard-of-hearing individuals.').classes('text-gray-700 mb-3')
                 ui.button('Download PDF', on_click=lambda: ui.notify('Downloading...')).classes('btn-primary')
     

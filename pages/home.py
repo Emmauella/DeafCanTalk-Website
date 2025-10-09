@@ -1,12 +1,11 @@
 from nicegui import ui
 from components.nav import create_navbar
-
 from components.footer import create_footer
-
 
 
 @ui.page('/')
 def home_page():
+    create_navbar()
     # Hero section
     with ui.element('div').classes('hero-section'):
         ui.label('Because Everyone Deserves to Be Heard').classes('text-5xl font-bold mb-4')
@@ -40,7 +39,7 @@ def home_page():
         with ui.row().classes('w-full gap-6 flex-wrap justify-center'):
             # Feature 1
             with ui.element('div').classes('card').style('flex: 1; min-width: 280px; max-width: 350px;'):
-                ui.label('🎓 Educational Resources').classes('text-2xl font-semibold text-[#0066cc] mb-3')
+                ui.label('Educational Resources').classes('text-2xl font-semibold text-[#0066cc] mb-3')
                 ui.label('Access comprehensive learning materials, video tutorials, and sign language guides to enhance communication skills.').classes('text-gray-700')
             
             # Feature 2
@@ -53,6 +52,6 @@ def home_page():
                 ui.label('Real-Time Communication').classes('text-2xl font-semibold text-[#0066cc] mb-3')
                 ui.label('Utilize cutting-edge technology for real-time sign language translation and text-to-speech capabilities.').classes('text-gray-700')
     
-create_footer()
+    create_footer()
 
 

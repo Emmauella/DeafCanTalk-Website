@@ -1,11 +1,11 @@
 from nicegui import ui
-from components.nav import create_nav
+from components.nav import create_navbar
 from components.footer import create_footer
 
 @ui.page('/gallery')
 def gallery_page():
     """Gallery page with photos and videos from community events."""
-    create_nav()
+    create_navbar()
     
     # Page header
     with ui.element('div').classes('hero-section'):
@@ -65,7 +65,7 @@ def gallery_page():
             # Video 1
             with ui.element('div').classes('card').style('flex: 1; min-width: 350px; max-width: 500px;'):
                 with ui.element('div').classes('bg-gray-300 rounded-lg mb-4').style('width: 100%; height: 280px; display: flex; align-items: center; justify-content: center;'):
-                    ui.label('🎥 Video Player').classes('text-3xl text-gray-600')
+                    ui.label('Video Player').classes('text-3xl text-gray-600')
                 ui.label('DeafCanTalk App Overview').classes('text-xl font-semibold text-[#0066cc] mb-2')
                 ui.label('Learn about the features and benefits of the DeafCanTalk mobile app.').classes('text-gray-700 mb-3')
                 ui.button('Watch Video', on_click=lambda: ui.notify('Playing video...')).classes('btn-secondary')
@@ -73,7 +73,7 @@ def gallery_page():
             # Video 2
             with ui.element('div').classes('card').style('flex: 1; min-width: 350px; max-width: 500px;'):
                 with ui.element('div').classes('bg-gray-300 rounded-lg mb-4').style('width: 100%; height: 280px; display: flex; align-items: center; justify-content: center;'):
-                    ui.label('🎥 Video Player').classes('text-3xl text-gray-600')
+                    ui.label('Video Player').classes('text-3xl text-gray-600')
                 ui.label('User Testimonials').classes('text-xl font-semibold text-[#0066cc] mb-2')
                 ui.label('Hear from users about how DeafCanTalk has impacted their lives.').classes('text-gray-700 mb-3')
                 ui.button('Watch Video', on_click=lambda: ui.notify('Playing video...')).classes('btn-secondary')
