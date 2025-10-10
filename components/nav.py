@@ -2,7 +2,7 @@ from nicegui import ui
 
 def create_navbar():
     """Create a consistent navbar for all pages."""
-    with ui.header().classes('bg-[#61A5C2] text-white shadow-lg').style('padding: 1rem 2rem;'):
+    with ui.header().classes('bg-sky-600/50 text-white shadow-lg').style('padding: 1rem 2rem;'):
         with ui.row().classes('w-full items-center justify-between'):
             # Logo and brand
             with ui.link(target='/').classes('no-underline'):

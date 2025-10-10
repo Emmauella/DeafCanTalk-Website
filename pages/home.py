@@ -8,7 +8,7 @@ from components.footer import create_footer
 def home_page():
     create_navbar()
     # Hero section
-    with ui.element('div').style('background-image: url(/assets/cvs.jpg); background-size: cover; background-position: center; width: 100%; min-height: 100vh; inset: 0; z-index: -2 ').classes("flex flex-col justify-center items center relative"):
+    with ui.element('div').style('background-image: url(/assets/flora.jpg); background-size: cover; background-position: center; width: 100%; min-height: 100vh; inset: 0; z-index: -2 ').classes("flex flex-col justify-center items center relative"):
         ui.label('').classes('text-5xl font-bold mb-4')
         ui.label('').classes('text-xl mb-8 text-gray-200')
         with ui.row().style("margin-top:20px").classes('gap-4 justify-center margins-top: 20px'):
@@ -53,6 +53,6 @@ def home_page():
                 ui.label('Real-Time Communication').classes('text-2xl font-semibold text-[#0066cc] mb-3')
                 ui.label('Utilize cutting-edge technology for real-time sign language translation and text-to-speech capabilities.').classes('text-gray-700')
     
-    # create_footer()
+    create_footer()
 
 

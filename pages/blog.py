@@ -10,7 +10,7 @@ def blog_page():
     # Page header
     with ui.element('div').classes('hero-section'):
         ui.label('Our Blog').classes('text-5xl font-bold mb-4')
-        ui.label('Stories, insights, and updates from the deaf community').classes('text-xl text-gray-200')
+        ui.label('Stories, insights, and updates from the deaf community').classes('text-xl text-blue-700')
     
     # Introduction
     with ui.element('div').classes('section'):
@@ -29,11 +29,11 @@ def blog_page():
     
     # Blog posts
     with ui.element('div').classes('section'):
-        with ui.column().classes('w-full gap-8'):
+        with ui.row().classes('w-full gap-8'):
             # Blog post 1
             with ui.element('div').classes('card'):
                 with ui.row().classes('w-full items-start gap-6 flex-wrap'):
-                    ui.image('/assets/5PIzmnhkBlLt.jpg').classes('rounded-lg shadow-md').style('width: 300px; height: 200px; object-fit: cover;')
+                    ui.image('/assets/tech.png').classes('rounded-lg shadow-md').style('width: 300px; height: 200px; object-fit: cover;')
                     with ui.column().classes('flex-1 gap-3'):
                         ui.label('Breaking Barriers: How Technology is Transforming Deaf Communication').classes('text-2xl font-bold text-[#003366]')
                         ui.label('Technology • March 15, 2025').classes('text-sm text-gray-500')
@@ -43,7 +43,7 @@ def blog_page():
             # Blog post 2
             with ui.element('div').classes('card'):
                 with ui.row().classes('w-full items-start gap-6 flex-wrap'):
-                    ui.image('/assets/WPl9rEwiRTyg.png').classes('rounded-lg shadow-md').style('width: 300px; height: 200px; object-fit: cover;')
+                    ui.image('/assets/child.jpg').classes('rounded-lg shadow-md').style('width: 300px; height: 200px; object-fit: cover;')
                     with ui.column().classes('flex-1 gap-3'):
                         ui.label('The Importance of Sign Language in Early Childhood Education').classes('text-2xl font-bold text-[#003366]')
                         ui.label('Education • March 10, 2025').classes('text-sm text-gray-500')
@@ -53,7 +53,7 @@ def blog_page():
             # Blog post 3
             with ui.element('div').classes('card'):
                 with ui.row().classes('w-full items-start gap-6 flex-wrap'):
-                    ui.image('/assets/Dh3oTGLtwYIP.jpg').classes('rounded-lg shadow-md').style('width: 300px; height: 200px; object-fit: cover;')
+                    ui.image('/assets/right.jpg').classes('rounded-lg shadow-md').style('width: 300px; height: 200px; object-fit: cover;')
                     with ui.column().classes('flex-1 gap-3'):
                         ui.label('Advocating for Deaf Rights: A Journey of Empowerment').classes('text-2xl font-bold text-[#003366]')
                         ui.label('Advocacy • March 5, 2025').classes('text-sm text-gray-500')
@@ -63,7 +63,7 @@ def blog_page():
             # Blog post 4
             with ui.element('div').classes('card'):
                 with ui.row().classes('w-full items-start gap-6 flex-wrap'):
-                    ui.image('/assets/ojWfYsq24CjA.jpg').classes('rounded-lg shadow-md').style('width: 300px; height: 200px; object-fit: cover;')
+                    ui.image('/assets/incl.jpg').classes('rounded-lg shadow-md').style('width: 300px; height: 200px; object-fit: cover;')
                     with ui.column().classes('flex-1 gap-3'):
                         ui.label('Building Inclusive Workplaces: Best Practices for Employers').classes('text-2xl font-bold text-[#003366]')
                         ui.label('Advocacy • February 28, 2025').classes('text-sm text-gray-500')
@@ -73,7 +73,7 @@ def blog_page():
             # Blog post 5
             with ui.element('div').classes('card'):
                 with ui.row().classes('w-full items-start gap-6 flex-wrap'):
-                    ui.image('/assets/yk7rAbMNoHMn.jpg').classes('rounded-lg shadow-md').style('width: 300px; height: 200px; object-fit: cover;')
+                    ui.image('/assets/cel.jpeg').classes('rounded-lg shadow-md').style('width: 300px; height: 200px; object-fit: cover;')
                     with ui.column().classes('flex-1 gap-3'):
                         ui.label('Community Spotlight: Celebrating Deaf Culture and Heritage').classes('text-2xl font-bold text-[#003366]')
                         ui.label('Community Stories • February 20, 2025').classes('text-sm text-gray-500')
