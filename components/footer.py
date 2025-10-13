@@ -32,7 +32,7 @@ def create_footer():
                     with ui.row().classes('gap-4'):
                         ui.link('Facebook', 'https://facebook.com').classes('text-gray-300 hover:text-white no-underline text-sm')
                         ui.link('Twitter', 'https://twitter.com').classes('text-gray-300 hover:text-white no-underline text-sm')
-                        ui.link('Instagram', 'https://instagram.com').classes('text-gray-300 hover:text-white no-underline text-sm')
+                        ui.link('Instagram', 'https://www.instagram.com/deafcantalk/').classes('text-gray-300 hover:text-white no-underline text-sm')
             
             # Copyright
             ui.separator().classes('bg-gray-600')

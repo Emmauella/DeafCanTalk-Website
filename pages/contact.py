@@ -76,27 +76,27 @@ def contact_page():
         with ui.row().classes('gap-6 justify-center flex-wrap'):
             # Facebook
             with ui.element('div').classes('card').style('flex: 0 1 200px; text-align: center;'):
-                ui.label('Writeup goes here').classes('text-5xl mb-3')
+                ui.image('/assets/communication.png').classes('rounded-lg shadow-md').style('width: 300px; height: 200px; object-fit: cover;')
                 ui.label('Facebook').classes('text-xl font-semibold text-[#0066cc] mb-2')
                 ui.link('Follow Us', 'https://facebook.com', new_tab=True).classes('text-gray-700 hover:text-[#0066cc]')
             
             # Twitter
             with ui.element('div').classes('card').style('flex: 0 1 200px; text-align: center;'):
-                ui.label('Writeup goes here').classes('text-5xl mb-3')
-                ui.label('Twitter').classes('text-xl font-semibold text-[#0066cc] mb-2')
-                ui.link('Follow Us', 'https://twitter.com', new_tab=True).classes('text-gray-700 hover:text-[#0066cc]')
+                 ui.image('/assets/twitter.png').classes('rounded-lg shadow-md').style('width: 300px; height: 200px; object-fit: cover;')
+                 ui.label('Twitter').classes('text-xl font-semibold text-[#0066cc] mb-2')
+                 ui.link('Follow Us', 'https://twitter.com', new_tab=True).classes('text-gray-700 hover:text-[#0066cc]')
             
             # Instagram
             with ui.element('div').classes('card').style('flex: 0 1 200px; text-align: center;'):
-                ui.label('Writeup').classes('text-5xl mb-3')
-                ui.label('Instagram').classes('text-xl font-semibold text-[#0066cc] mb-2')
-                ui.link('Follow Us', 'https://instagram.com', new_tab=True).classes('text-gray-700 hover:text-[#0066cc]')
+                 ui.image('/assets/instagram.png').classes('rounded-lg shadow-md').style('width: 300px; height: 200px; object-fit: cover;')
+                 ui.label('Instagram').classes('text-xl font-semibold text-[#0066cc] mb-2')
+                 ui.link('Follow Us', 'https://www.instagram.com/deafcantalk/', new_tab=True).classes('text-gray-700 hover:text-[#0066cc]')
             
             # LinkedIn
             with ui.element('div').classes('card').style('flex: 0 1 200px; text-align: center;'):
-                ui.label('writeup').classes('text-5xl mb-3')
-                ui.label('LinkedIn').classes('text-xl font-semibold text-[#0066cc] mb-2')
-                ui.link('Follow Us', 'https://linkedin.com', new_tab=True).classes('text-gray-700 hover:text-[#0066cc]')
+                 ui.image('/assets/linkedin.png').classes('rounded-lg shadow-md').style('width: 300px; height: 200px; object-fit: cover;')
+                 ui.label('LinkedIn').classes('text-xl font-semibold text-[#0066cc] mb-2')
+                 ui.link('Follow Us', 'https://linkedin.com', new_tab=True).classes('text-gray-700 hover:text-[#0066cc]')
     
     # Map section (placeholder)
     with ui.element('div').classes('section bg-gray-50'):
