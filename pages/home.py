@@ -27,19 +27,31 @@ def home_page():
     with ui.element('div').classes(
         'w-full min-h-screen bg-gray-50 flex flex-col justify-center items-center px-10 py-20 gap-10 text-center'
     ):
-        label_access = ui.label('Accessibility').classes(
-            'text-5xl md:text-6xl font-bold text-blue-600 cursor-pointer'
-            
-        )
-        label_access = ui.label('for Deaf Learner').classes('text-xl font-bold text-black')
+        # --- Main Heading (like Slack: “Where Work Happens”) ---
+        with ui.row().classes('justify-center items-baseline flex-wrap gap-2'):
+            ui.label('ACCESSIBILITY').classes('text-5xl md:text-6xl font-bold text-blue-500')
+            label_access = ui.label('FOR DEAF').classes(
+                'text-5xl md:text-6xl font-bold text-black cursor-pointer'
+            )
+            ui.label('LEARNERS').classes('text-5xl md:text-6xl font-bold text-black')
 
+        # --- Subtext ---
         ui.label(
-            'Empowering deaf and hard-of-hearing individuals through inclusive education and technology.'
+            'Experience seamless communication with our mobile app, available on iOS and Android.'
         ).classes('text-lg text-gray-600 max-w-[700px] text-center')
+
+        # --- Buttons (like “Get Started” & “Find Your Plan”) ---
+        with ui.row().classes('justify-center gap-4 mt-4'):
+            ui.button('DOWNLOAD', on_click=lambda: ui.notify('Getting Started...')).classes(
+                'bg-purple-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-800 transition'
+            )
+            ui.button('GET IT ON GOOGLE PLAY', on_click=lambda: ui.notify('Finding your plan...')).classes(
+                'border border-purple-700 text-purple-700 px-6 py-3 rounded-lg font-semibold hover:bg-purple-50 transition'
+            )
 
         # --- Bounce once on load ---
         ui.run_javascript("""
-        const label = document.querySelector('label.text-5xl, label.text-6xl');
+        const label = document.querySelector('label.text-blue-600');
         if (label) {
             label.classList.add('animate-bounce-on-tap');
             setTimeout(() => label.classList.remove('animate-bounce-on-tap'), 1500);
@@ -48,19 +60,24 @@ def home_page():
 
         # --- Bounce each tap ---
         label_access.on('click', lambda: ui.run_javascript("""
-            const label = document.querySelector('label.text-5xl, label.text-6xl');
+            const label = document.querySelector('label.text-blue-600');
             if (label) {
                 label.classList.add('animate-bounce-on-tap');
                 setTimeout(() => label.classList.remove('animate-bounce-on-tap'), 1500);
             }
         """))
 
-        # Video below
-        with ui.card().classes('w-full max-w-[800px] rounded-2xl shadow-2xl overflow-hidden bg-white mt-6'):
-            ui.video('/assets/V2.mp4', autoplay=True, muted=True, loop=True).classes(
+        # ---------------------------
+        # VIDEO BELOW HERO
+        # ---------------------------
+        with ui.card().classes(
+            'w-full max-w-[800px] rounded-2xl shadow-2xl overflow-hidden bg-white mt-10'
+        ):
+            ui.video('/assets/vid.mp4', autoplay=True, muted=True, loop=True).classes(
                 'w-full h-[450px] object-cover object-center rounded-xl'
             )
 
+            
     # ---------------------------
     # INTRODUCTION
     # ---------------------------
@@ -78,18 +95,7 @@ def home_page():
                 ui.image('/assets/deafcann.jpeg').classes('rounded-lg shadow-lg w-full').style('max-width: 500px;')
 
     # ---------------------------
-    # APP DOWNLOAD
-    # ---------------------------
-    with ui.element('div').classes('section py-16'):
-        with ui.column().classes('w-full items-center gap-6'):
-            ui.label('Download the DeafCanTalk App').classes('text-4xl font-bold text-[#003366] text-center')
-            ui.label(
-                'Experience seamless communication with our mobile app, available on iOS and Android.'
-            ).classes('text-lg text-gray-700 text-center')
-            with ui.row().classes('gap-4 justify-center mt-4'):
-                ui.button('Download on App Store', on_click=lambda: ui.notify('Redirecting to App Store...')).classes('btn-primary')
-                ui.button('Get it on Google Play', on_click=lambda: ui.notify('Redirecting to Google Play...')).classes('btn-secondary')
-
+  
         # ---------------------------
         # ---------------------------
        # ---------------------------
@@ -136,7 +142,7 @@ def home_page():
 
                 # --- VIDEO COLUMN ---
                 with ui.card().classes('flex-1 min-w-[350px] bg-white rounded-2xl shadow-xl overflow-hidden'):
-                    ui.video('/assets/V2.mp4', autoplay=True, muted=True, controls=True).classes(
+                    ui.video('/assets/vid.mp4', autoplay=True, muted=True, controls=True).classes(
                         'p-4 w-full h-[360px] object-cover rounded-xl'
                     )
 
