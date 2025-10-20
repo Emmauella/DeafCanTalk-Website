@@ -71,7 +71,7 @@ def home_page():
         # VIDEO BELOW HERO
         # ---------------------------
         with ui.card().classes(
-            'w-full max-w-[800px] rounded-2xl shadow-2xl overflow-hidden bg-white mt-10'
+            'w-full max-w-[600px] rounded-2xl shadow-2xl overflow-hidden bg-white mt-10'
         ):
             ui.video('/assets/vid.mp4', autoplay=True, muted=True, loop=True).classes(
                 'w-full h-[450px] object-cover object-center rounded-xl'
